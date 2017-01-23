@@ -35,7 +35,7 @@ stages:
     script: |-
       #!/bin/bash
       # Push app
-      cf ds myMicroserviceURLs
+      ${CATALOG_APP_NAME}
       cf cups myMicroserviceURLs -p '{"catalog-url":"${CATALOG_APP_NAME}","orders-url":"${ORDERS_APP_NAME}"}'
       cf push
       # View logs
