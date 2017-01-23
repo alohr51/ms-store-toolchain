@@ -49,6 +49,8 @@ ui-build:
       env:
         UI_REPO: "ui-repo"
         CF_APP_NAME: "{{deploy.parameters.ui-app-name}}"
+        ORDERS_APP_NAME: "{{deploy.parameters.orders-app-name}}"
+        CATALOG_APP_NAME: "{{deploy.parameters.catalog-app-name}}"
         DEV_SPACE_NAME: "{{deploy.parameters.dev-space}}"
         DEV_ORG_NAME: "{{deploy.parameters.dev-organization}}"
         DEV_REGION_ID: "{{deploy.parameters.dev-region}}"
